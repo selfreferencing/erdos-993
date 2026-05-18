@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>For Mathematicians | Erdos 993</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header"><nav><a href="../">Home</a></nav></header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">For mathematicians</p>
+      <h1>The proof route</h1>
+      <p class="lede">
+        The proof is not presented as a log-concavity proof. It uses geometric
+        recursion, tree/forest synchronization, and a finite certificate bridge.
+      </p>
+    </section>
+    <section>
+      <h2>The Problem</h2>
+      <p>
+        Erdos Problem 993 asks for unimodality of the independent-set sequence
+        of a finite tree. The public Lean statement is phrased for finite
+        acyclic simple graphs, covering finite trees and forests.
+      </p>
+    </section>
+    <section>
+      <h2>Why Not Log-Concavity?</h2>
+      <p>
+        A natural first route is to prove log-concavity of the independent-set
+        sequence. That route fails in the needed generality, so the project
+        moves to structural geometry rather than treating log-concavity as the
+        invariant.
+      </p>
+    </section>
+    <section>
+      <h2>Trees, Forests, And Synchronization</h2>
+      <p>
+        Trees and forests have related but distinct recursion laws. Products
+        over forest components create a different coordinate system, so the
+        proof needs a synchronization layer between the tree and forest views.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
+

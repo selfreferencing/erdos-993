@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Erdos 993 Formalization</title>
+  <meta name="description" content="A public landing page for an AI-assisted Lean formalization program for Erdos Problem 993.">
+  <meta property="og:title" content="Erdos 993 Formalization">
+  <meta property="og:description" content="AI-assisted Lean proof engineering for unimodality of independent-set sequences of finite trees.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "base" });
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <nav aria-label="Primary">
+      <a href="#theorem">Theorem</a>
+      <a href="#status">Status</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#review">Review</a>
+      <a href="#ai">AI Method</a>
+      <a href="#contact">Access</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">AI-assisted Lean formalization</p>
+      <h1>Erdos 993</h1>
+      <p class="lede">
+        A Lean proof program for the unimodality of independent-set sequences
+        of finite trees, organized as a public finite acyclic graph theorem and
+        a large semantic/certificate bridge.
+      </p>
+      <div class="cta-row">
+        <a class="button primary" href="https://github.com/selfreferencing/Erdos-lean">Private technical repository</a>
+        <a class="button" href="docs/project-brief.html">Project brief</a>
+      </div>
+      <div class="status-grid" id="status">
+        <div>
+          <span class="label">Public wrapper</span>
+          <strong>Checked locally</strong>
+        </div>
+        <div>
+          <span class="label">Active frontier</span>
+          <strong>P116 actualization</strong>
+        </div>
+        <div>
+          <span class="label">Disclosure state</span>
+          <strong>Pre-closure</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="theorem">
+      <h2>Public Theorem Surface</h2>
+      <p>
+        The external theorem is the finite acyclic simple graph statement. The
+        internal SemanticTree theorem is proof machinery, not the public claim.
+      </p>
+      <pre><code>∀ {Vtx : Type} [Fintype Vtx] [DecidableEq Vtx]
+  (G : SimpleGraph Vtx) [DecidableRel G.Adj],
+    G.IsAcyclic →
+      Unimodal (independenceSequenceOfGraph G)</code></pre>
+    </section>
+
+    <section>
+      <h2>What This Is</h2>
+      <p>
+        The project combines ordinary Lean proof engineering, generated finite
+        certificates, computational audits, and multi-agent AI proof search. The
+        intended release standard is conventional: checked Lean source,
+        reproducible commands, explicit trust boundaries, and outside review.
+      </p>
+      <div class="split">
+        <div>
+          <h3>For mathematicians</h3>
+          <p>
+            The proof route moves beyond a failed log-concavity strategy into a
+            geometric recursion analysis of trees and forests, including a
+            synchronization layer between their different coordinate systems.
+          </p>
+        </div>
+        <div>
+          <h3>For Lean reviewers</h3>
+          <p>
+            The key review boundary is whether the P116 semantic actualization
+            layer non-circularly connects actual selected packages to the
+            generated finite certificate layer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="architecture">
+      <h2>Proof Architecture</h2>
+      <div class="mermaid">
+flowchart TD
+  problem["Erdos Problem 993"]
+  public["Public acyclic SimpleGraph theorem"]
+  sourcefree["Source-free final surface"]
+  semantic["Internal SemanticTree engine"]
+  sync["Tree/forest synchronization"]
+  tree["Tree recursion"]
+  forest["Forest recursion"]
+  p116["P116 semantic actualization"]
+  cert["Generated finite certificate layer"]
+
+  problem --> public
+  public --> sourcefree
+  sourcefree --> semantic
+  semantic --> sync
+  sync --> tree
+  sync --> forest
+  semantic --> p116
+  p116 --> cert
+      </div>
+    </section>
+
+    <section id="review">
+      <h2>Reviewer Entry Points</h2>
+      <div class="cards">
+        <a href="docs/project-brief.html">Project brief</a>
+        <a href="docs/for-mathematicians.html">For mathematicians</a>
+        <a href="docs/for-lean-reviewers.html">For Lean reviewers</a>
+        <a href="docs/trust-boundary.html">Trust boundary</a>
+        <a href="docs/proof-chain.html">Proof chain</a>
+        <a href="docs/line-count-framing.html">Line-count framing</a>
+      </div>
+    </section>
+
+    <section id="ai">
+      <h2>AI Methodology</h2>
+      <p>
+        The project is intentionally AI-forward. AI systems were used for
+        theorem-shape exploration, proof-route audits, Lean repair loops,
+        computational stress tests, and certificate engineering. This is not
+        hidden; it is part of the contribution and part of what reviewers should
+        evaluate.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Repository Access</h2>
+      <p>
+        The technical repository is currently private while the final P116
+        frontier is being closed and reviewed. The public landing page is meant
+        as a stable, uncomplicated link for collaborators, grantors, and early
+        technical reviewers.
+      </p>
+      <p>
+        Repository owner: <a href="https://github.com/selfreferencing">selfreferencing</a>.
+        Technical repository: <a href="https://github.com/selfreferencing/Erdos-lean">selfreferencing/Erdos-lean</a>.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

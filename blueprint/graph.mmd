@@ -1,0 +1,19 @@
+flowchart TD
+  problem["Erdos Problem 993"]
+  public["Public acyclic SimpleGraph theorem"]
+  sourcefree["Source-free final surface"]
+  semantic["Internal SemanticTree engine"]
+  sync["Tree/forest synchronization"]
+  tree["Tree recursion"]
+  forest["Forest recursion"]
+  p116["P116 semantic actualization"]
+  cert["Generated finite certificate layer"]
+
+  problem --> public
+  public --> sourcefree
+  sourcefree --> semantic
+  semantic --> sync
+  sync --> tree
+  sync --> forest
+  semantic --> p116
+  p116 --> cert

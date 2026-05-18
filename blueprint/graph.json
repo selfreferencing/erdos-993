@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {"id": "problem", "label": "Erdos Problem 993"},
+    {"id": "public", "label": "Public acyclic SimpleGraph theorem"},
+    {"id": "sourcefree", "label": "Source-free final surface"},
+    {"id": "semantic", "label": "Internal SemanticTree engine"},
+    {"id": "sync", "label": "Tree/forest synchronization"},
+    {"id": "tree", "label": "Tree recursion"},
+    {"id": "forest", "label": "Forest recursion"},
+    {"id": "p116", "label": "P116 semantic actualization"},
+    {"id": "cert", "label": "Generated finite certificate layer"}
+  ],
+  "edges": [
+    {"from": "problem", "to": "public"},
+    {"from": "public", "to": "sourcefree"},
+    {"from": "sourcefree", "to": "semantic"},
+    {"from": "semantic", "to": "sync"},
+    {"from": "sync", "to": "tree"},
+    {"from": "sync", "to": "forest"},
+    {"from": "semantic", "to": "p116"},
+    {"from": "p116", "to": "cert"}
+  ]
+}

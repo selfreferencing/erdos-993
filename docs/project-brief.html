@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Brief | Erdos 993</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header"><nav><a href="../">Home</a></nav></header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Project brief</p>
+      <h1>Erdos 993 Formalization</h1>
+      <p class="lede">
+        An AI-assisted Lean proof program for unimodality of independent-set
+        sequences of finite trees, organized around a public finite-acyclic
+        graph theorem and a large semantic/certificate bridge.
+      </p>
+    </section>
+    <section>
+      <h2>Public Mathematical Claim</h2>
+      <pre><code>∀ {Vtx : Type} [Fintype Vtx] [DecidableEq Vtx]
+  (G : SimpleGraph Vtx) [DecidableRel G.Adj],
+    G.IsAcyclic →
+      Unimodal (independenceSequenceOfGraph G)</code></pre>
+    </section>
+    <section>
+      <h2>Current State</h2>
+      <p>
+        The public theorem wrapper and source-free final theorem files are
+        prepared in the private technical repository. The remaining active
+        frontier is P116: the semantic actualization bridge connecting selected
+        package certificates to the public theorem chain.
+      </p>
+    </section>
+    <section>
+      <h2>Why The Repository Is Large</h2>
+      <p>
+        The project separates ordinary Lean proof code, generated finite
+        certificates, computational audits, and AI prompt/result records. The
+        public communication goal is to make those layers visible rather than
+        presenting all files as one undifferentiated proof.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
+
