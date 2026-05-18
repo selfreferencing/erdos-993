@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Erdos 993 Formalization</title>
-  <meta name="description" content="A public landing page for an AI-assisted Lean formalization program for Erdos Problem 993.">
-  <meta property="og:title" content="Erdos 993 Formalization">
+  <title>Erdős 993 Formalization</title>
+  <meta name="description" content="A public landing page for an AI-assisted Lean formalization program for Erdős Problem 993.">
+  <meta property="og:title" content="Erdős 993 Formalization">
   <meta property="og:description" content="AI-assisted Lean proof engineering for unimodality of independent-set sequences of finite trees.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="styles.css">
@@ -19,30 +19,38 @@
     <nav aria-label="Primary">
       <a href="#theorem">Theorem</a>
       <a href="#status">Status</a>
+      <a href="#progress">Progress</a>
       <a href="#architecture">Architecture</a>
       <a href="#review">Review</a>
       <a href="#ai">AI Method</a>
-      <a href="#contact">Access</a>
+      <a href="#access">Access</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
       <p class="eyebrow">AI-assisted Lean formalization</p>
-      <h1>Erdos 993</h1>
+      <h1>AI-Assisted Lean Formalization of Erdős Problem 993</h1>
       <p class="lede">
-        A Lean proof program for the unimodality of independent-set sequences
-        of finite trees, organized as a public finite acyclic graph theorem and
-        a large semantic/certificate bridge.
+        A live proof-engineering program for the unimodality of independent-set
+        sequences of finite trees, organized as a public finite acyclic graph
+        theorem and a large semantic/certificate bridge.
+      </p>
+      <p class="truth-note">
+        This page does not claim a completed proof. It documents a serious
+        pre-closure formalization with a fixed theorem surface, prepared proof
+        architecture, and a sharply isolated final bridge obligation.
       </p>
       <div class="cta-row">
-        <a class="button primary" href="https://github.com/selfreferencing/Erdos-lean">Private technical repository</a>
-        <a class="button" href="docs/project-brief.html">Project brief</a>
+        <a class="button primary" href="docs/grantor-brief.html">Grantor brief</a>
+        <a class="button" href="#access">Request technical access</a>
+        <a class="button" href="docs/proof-chain.html">Read proof architecture</a>
       </div>
+      <p class="meta-line">Last updated: May 18, 2026 · Public repository: <a href="https://github.com/selfreferencing/erdos-993">selfreferencing/erdos-993</a></p>
       <div class="status-grid" id="status">
         <div>
           <span class="label">Public wrapper</span>
-          <strong>Checked locally</strong>
+          <strong>Checked</strong>
         </div>
         <div>
           <span class="label">Active frontier</span>
@@ -51,6 +59,10 @@
         <div>
           <span class="label">Disclosure state</span>
           <strong>Pre-closure</strong>
+        </div>
+        <div>
+          <span class="label">External review</span>
+          <strong>Pending closure</strong>
         </div>
       </div>
     </section>
@@ -65,6 +77,35 @@
   (G : SimpleGraph Vtx) [DecidableRel G.Adj],
     G.IsAcyclic →
       Unimodal (independenceSequenceOfGraph G)</code></pre>
+    </section>
+
+    <section id="progress">
+      <h2>What Is Done / What Remains</h2>
+      <div class="two-column">
+        <div>
+          <h3>Done</h3>
+          <ul class="compact-list">
+            <li>Public finite acyclic graph theorem surface fixed.</li>
+            <li>Tree and forest recursion program developed.</li>
+            <li>Tree/forest coordinate synchronization isolated.</li>
+            <li>Semantic bridge architecture prepared.</li>
+            <li>Generated certificate framework and reviewer documents organized.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Remaining</h3>
+          <ul class="compact-list">
+            <li>Close the P116 semantic actualization bridge.</li>
+            <li>Run clean-checkout final Lean verification.</li>
+            <li>Submit the proof package for external Lean and mathematical review.</li>
+          </ul>
+        </div>
+      </div>
+      <p>
+        Completion means Lean closure of the final bridge, a reproducible
+        release transcript, and a review packet that separates generated data
+        from hand-reviewable semantic code.
+      </p>
     </section>
 
     <section>
@@ -99,7 +140,7 @@
       <h2>Proof Architecture</h2>
       <div class="mermaid">
 flowchart TD
-  problem["Erdos Problem 993"]
+  problem["Erdős Problem 993"]
   public["Public acyclic SimpleGraph theorem"]
   sourcefree["Source-free final surface"]
   semantic["Internal SemanticTree engine"]
@@ -123,6 +164,7 @@ flowchart TD
     <section id="review">
       <h2>Reviewer Entry Points</h2>
       <div class="cards">
+        <a href="docs/grantor-brief.html">Grantor brief</a>
         <a href="docs/project-brief.html">Project brief</a>
         <a href="docs/for-mathematicians.html">For mathematicians</a>
         <a href="docs/for-lean-reviewers.html">For Lean reviewers</a>
@@ -143,7 +185,7 @@ flowchart TD
       </p>
     </section>
 
-    <section id="contact">
+    <section id="access">
       <h2>Repository Access</h2>
       <p>
         The technical repository is currently private while the final P116
@@ -153,6 +195,7 @@ flowchart TD
       </p>
       <p>
         Repository owner: <a href="https://github.com/selfreferencing">selfreferencing</a>.
+        Public doorway: <a href="https://github.com/selfreferencing/erdos-993">selfreferencing/erdos-993</a>.
         Technical repository: <a href="https://github.com/selfreferencing/Erdos-lean">selfreferencing/Erdos-lean</a>.
       </p>
     </section>

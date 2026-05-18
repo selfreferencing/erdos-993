@@ -1,6 +1,6 @@
 {
   "nodes": [
-    {"id": "problem", "label": "Erdos Problem 993"},
+    {"id": "problem", "label": "Erdős Problem 993"},
     {"id": "public", "label": "Public acyclic SimpleGraph theorem"},
     {"id": "sourcefree", "label": "Source-free final surface"},
     {"id": "semantic", "label": "Internal SemanticTree engine"},

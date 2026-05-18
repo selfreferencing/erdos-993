@@ -1,7 +1,7 @@
-# Erdos 993 Formalization
+# Erdős 993 Formalization
 
 This repository is the public landing page for an AI-assisted Lean proof
-program for Erdos Problem 993: unimodality of independent-set sequences of
+program for Erdős Problem 993: unimodality of independent-set sequences of
 finite trees.
 
 Public site:
@@ -19,4 +19,3 @@ https://github.com/selfreferencing/Erdos-lean
 
 This public repository intentionally contains a concise project doorway rather
 than the full proof worktree.
-
