@@ -1,3 +1,7 @@
+> **Superseded.** This page describes earlier work (last updated May 18, 2026) and is out of date. The current work is
+> [selfreferencing/erdos993-lean](https://github.com/selfreferencing/erdos993-lean): a Lean 4 proof of Erdős Problem #993
+> (every forest has a unimodal independence sequence), built on the proof of Tong Zhang and Wei Li.
+
 # Erdős 993 Formalization
 
 This repository is the public landing page for an AI-assisted Lean proof
